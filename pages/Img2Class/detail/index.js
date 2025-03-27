@@ -8,6 +8,7 @@ Page({
     imagePath: '',
     fileSize: '计算中...',
     predictedLabel: '计算中...',
+    description: '',
   },
 
   // 计算文件大小
@@ -55,7 +56,8 @@ Page({
           const data = JSON.parse(res.data);
           if (data.predictedLabel) {
             this.setData({
-              predictedLabel: data.predictedLabel
+              predictedLabel: data.predictedLabel,
+              description: data.description
             });
           } else {
             this.setData({
