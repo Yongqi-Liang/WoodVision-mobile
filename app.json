@@ -11,6 +11,23 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarBackgroundColor": "#ffffff"
   },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/Img2Class/home/index",
+        "text": "识木",
+        "iconPath": "images/v.png", 
+        "selectedIconPath": "images/v_s.png"
+      },
+      {
+        "pagePath": "pages/Prompt2Img/home/index",
+        "text": "生图",
+        "iconPath": "images/a.png", 
+        "selectedIconPath": "images/a_s.png"
+      }
+    ],
+    "selectedColor": "#000000"
+  },
   "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
