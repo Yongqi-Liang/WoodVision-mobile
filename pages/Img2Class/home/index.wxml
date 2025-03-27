@@ -1,2 +1,8 @@
 <!--pages/Img2Class/home/index.wxml-->
-<text>pages/Img2Class/home/index.wxml</text>
+<view class="container">
+  <!-- 添加 bindtap 事件，并优化按钮结构 -->
+  <view class="btn_StartVision" bindtap="handleTakePhoto">
+    <image src="/images/start.png" mode="aspectFit" class="btn-image"/>
+    <text class="btn-text">拍照识木</text>
+  </view>
+</view>

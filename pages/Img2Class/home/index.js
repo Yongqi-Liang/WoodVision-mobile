@@ -2,6 +2,31 @@
 Page({
 
   /**
+   * 方法
+   */
+  handleTakePhoto() {
+    wx.chooseMedia({
+      count: 1,
+      mediaType: ['image'],
+      sourceType: ['camera'], // 强制调起摄像头
+      camera: 'back',
+      success: (res) => {
+        const tempFilePath = res.tempFiles[0].tempFilePath;
+        console.log('拍照成功，临时路径:', tempFilePath);
+        
+        // 跳转到结果页，携带图片临时路径
+        wx.navigateTo({
+          url: `/pages/Img2Class/detail/index?image=${encodeURIComponent(tempFilePath)}`,
+        });
+      },
+      fail: (err) => {
+        console.error('拍照失败:', err);
+        wx.showToast({ title: '拍照失败', icon: 'none' });
+      }
+    });
+  },
+
+  /**
    * 页面的初始数据
    */
   data: {

@@ -1,2 +1,6 @@
 <!--pages/Img2Class/detail/index.wxml-->
-<text>pages/Img2Class/detail/index.wxml</text>
+<view class="container">
+  <image src="{{imagePath}}" mode="aspectFit" class="result-image"/>
+  <text>图片文件大小：{{fileSize}}</text>
+  <text>识别结果：{{predictedLabel}}</text>
+</view>
