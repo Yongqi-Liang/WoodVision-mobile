@@ -3,4 +3,5 @@
   <image src="{{imagePath}}" mode="aspectFit" class="result-image"/>
   <text>图片文件大小：{{fileSize}}</text>
   <text>识别结果：{{predictedLabel}}</text>
+  <text>显微切片构造特征：{{description}}</text>
 </view>
