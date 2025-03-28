@@ -1,7 +1,10 @@
 <!--pages/Img2Class/detail/index.wxml-->
 <view class="container">
-  <image src="{{imagePath}}" mode="aspectFit" class="result-image"/>
-  <text>图片文件大小：{{fileSize}}</text>
-  <text>识别结果：{{predictedLabel}}</text>
-  <text>显微切片构造特征：{{description}}</text>
+  <image id="pic_upload" src="{{imagePath}}" mode="aspectFit" class="result-image"/>
+  <text class="greenheadtext">图片文件大小</text>
+  <text>{{fileSize}}</text>
+  <text class="greenheadtext">识别结果</text>
+  <text>{{predictedLabel}}</text>
+  <text class="greenheadtext">显微切片构造特征</text>
+  <text>{{description}}</text>
 </view>

@@ -43,7 +43,7 @@ Page({
     });
 
     wx.uploadFile({
-      url: 'http://172.20.10.10:8080/predict',
+      url: 'http://ec2-44-212-8-132.compute-1.amazonaws.com:8080/predict',
       filePath: filePath,
       name: 'Image',
       formData: {},
