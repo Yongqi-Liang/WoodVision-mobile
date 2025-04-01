@@ -1,2 +1,30 @@
 <!--pages/Prompt2Img/home/index.wxml-->
-<text>pages/Prompt2Img/home/index.wxml</text>
+<view class="container">
+  <!-- 消息列表 -->
+  <scroll-view scroll-y class="message-list" scroll-into-view="{{'msg-' + (messageList.length-1)}}">
+    <block wx:for="{{messageList}}" wx:key="id">
+      <view id="msg-{{index}}" class="message-item {{item.role}}">
+        <image wx:if="{{item.role === 'assistant'}}" src="/images/ai-avatar.png" class="avatar"></image>
+        <image wx:if="{{item.role === 'user'}}" src="/images/user-avatar.png" class="avatar"></image>
+        <view class="message-content">{{item.content}}</view>
+        <view class="message-picture" wx:if="{{item.picture && item.picture !== ''}}">
+          <image class="generate_pic" src="{{item.picture}}"/>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  
+  <!-- 输入框区域 -->
+  <view class="input-area">
+    <input 
+      placeholder="输入你的问题..." 
+      bindinput="onInput" 
+      value="{{inputValue}}"
+      confirm-type="send"
+      bindconfirm="sendMessage"
+    />
+    <view class="btn_send" bindtap="sendMessage" disabled="{{!inputValue.trim()}}">
+      <image class="img_btn_send" src="/images/send.png" mode=""/>
+    </view>
+  </view>
+</view>

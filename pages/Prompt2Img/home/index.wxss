@@ -1,1 +1,71 @@
-/* pages/Prompt2Img/home/index.wxss */
+.container {
+  width: 100%;
+  height: 100vh;
+  gap: 10px;
+  padding: 20px;
+}
+.message-list {
+  width: 100%;
+  height: 93%;
+}
+.input-area {
+  width: 100%;
+  height: 7%;
+  background-color: rgb(231, 231, 231);
+  border-radius: 20px;
+  display: flex;
+  align-items: center; /* 使子元素垂直居中 */
+  padding: 0 5px; /* 左右 padding 防止内容贴边 */
+}
+
+.input-area input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.input-area .btn_send {
+  width: 45px; /* 固定宽度，避免百分比影响 */
+  height: 35px; /* 固定高度，确保圆形 */
+  background-color: #ffffff;
+  border-radius: 20px; /* 圆形按钮 */
+  display: flex; /* 使子元素可居中 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  cursor: pointer; /* 鼠标悬停时显示手型 */
+}
+
+.input-area .btn_send:active {
+  background-color: #d9d9d9;
+}
+
+.input-area .btn_send .img_btn_send {
+  width: 20px;
+  height: 20px;
+}
+
+.message-item {
+  width: 100%;
+  height: auto;
+  padding: 5px 0;
+}
+
+.avatar {
+  padding: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 5px 0;
+}
+
+.generate_pic {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(231, 231, 231);
+  margin: 10px 0;
+  border-radius: 8px;
+}
+

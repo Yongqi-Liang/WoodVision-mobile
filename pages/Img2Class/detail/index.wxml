@@ -4,7 +4,7 @@
   <text class="greenheadtext">图片文件大小</text>
   <text>{{fileSize}}</text>
   <text class="greenheadtext">识别结果</text>
-  <text>{{predictedLabel}}</text>
+  <text>{{predictedLabel}}-横切面</text>
   <text class="greenheadtext">显微切片构造特征</text>
   <text>{{description}}</text>
 </view>

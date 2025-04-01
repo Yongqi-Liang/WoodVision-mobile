@@ -1,7 +1,7 @@
 {
   "miniVersion": "v2",
-  "name": "%name%",
-  "version": "0.0.1",
+  "name": "慧眼识木",
+  "version": "2.0.0",
   "versionCode": 100,
   "i18nFilePath": "i18n",
   "mini-android": {
@@ -16,10 +16,10 @@
       "xweb": false
     },
     "icons": {
-      "hdpi": "",
-      "xhdpi": "",
-      "xxhdpi": "",
-      "xxxhdpi": ""
+      "hdpi": "c:/Users/Administrator/Downloads/app.png",
+      "xhdpi": "c:/Users/Administrator/Downloads/app.png",
+      "xxhdpi": "c:/Users/Administrator/Downloads/app.png",
+      "xxxhdpi": "c:/Users/Administrator/Downloads/app.png"
     },
     "splashscreen": {
       "hdpi": "",

@@ -1,6 +1,13 @@
 // app.js
 App({
   onLaunch() {
+    // ===== 新增：强制关闭 vConsole 调试模式 =====
+    if (typeof wx.setEnableDebug === 'function') {
+      wx.setEnableDebug({
+        enableDebug: false // 关闭调试模式
+      });
+    }
+
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
